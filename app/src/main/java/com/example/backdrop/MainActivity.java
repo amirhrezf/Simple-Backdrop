@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
-//        toolbar.setNavigationOnClickListener(new NavigationIconClickListener(getContext(), view.findViewById(R.id.product_grid)));
         toolbar.setNavigationOnClickListener(new NavigationIconClickListener(
                 MainActivity.this,
                 findViewById(R.id.product_grid),
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.getResources().getDrawable(R.drawable.nav), // Menu open icon
                 MainActivity.this.getResources().getDrawable(R.drawable.close))); // Menu close icon
 
-//        toolbar.setNavigationOnClickListener(new NavigationIconClickListener(MainActivity.this, findViewById(R.id.product_grid)));
         // Set up the tool bar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             findViewById(R.id.product_grid).setBackgroundResource(R.drawable.bk_product_grid_background_shape);
